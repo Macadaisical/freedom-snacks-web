@@ -3,12 +3,14 @@ import { motion } from 'framer-motion';
 const Hero = () => {
     return (
         <section style={{
-            minHeight: '100vh',
+            minHeight: '600px', // Reduced from 100vh to fit better in embeds
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'center',
+            justifyContent: 'flex-start', // Top-align instead of center
+            flexDirection: 'column',
             background: 'radial-gradient(circle at center, #ffffff 0%, #f0f0f0 100%)',
-            paddingTop: '80px',
+            paddingTop: '120px', // Fixed space from top (80px nav + 40px gap)
+            paddingBottom: '4rem',
             overflow: 'hidden',
             position: 'relative'
         }}>
